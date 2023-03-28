@@ -1,0 +1,112 @@
+.mana-head .navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+}
+.mana-head {
+    overflow-x: hidden;
+}
+.navbar .hamburguer {
+    display: none;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.navbar li a {
+    font-size: 20px;
+    text-decoration: none;
+}
+.navbar li a:hover {
+    color: #0E91EF;
+    font-size: 20px;
+    text-decoration: none;
+}
+/* .navbar ul  */
+.logo {
+    width: 100px;
+}
+.navbar .mobile {
+    display: none;
+}
+@media (max-width: 425px) {
+    .navbar > button {
+        display: none;
+    }
+    .navbar .mobile {
+        display: block;
+    }
+    .navbar .logo {
+        position: absolute;
+        left: 12px;
+    }
+    .navbar .hamburguer {
+        position: absolute;
+        right: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 3px;
+        height: 32px;
+        width: 32px;
+        transition: 500ms;
+        z-index: 10010;
+    }
+    .navbar .hamburguer div {
+        height: 3px;
+        border-radius: 30px;
+        background: #0E91EF;
+    }
+    .navbar .hamburguer .hamb-1 {
+        width: 60%
+    }
+    .navbar .hamburguer .hamb-2 {
+        width: 80%
+    }
+    .navbar .hamburguer .hamb-3 {
+        width: 70%
+    }
+    .navbar .hamburguer.active {
+        transform: translateX(-80vw);
+        align-items: flex-start;
+    }
+    .navbar ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        right: 0;
+        height: 100vh;
+        padding-top: 64px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background: #fff;
+        transform: translateX(100%);
+        transition: 500ms;
+        z-index: 1000;
+    }
+    .navbar ul.active {
+        transition: 500ms;
+        transform: translateX(0);
+    }
+    .navbar ul li {
+        padding-left: 32px;
+    }
+    .navbar ul li a {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,38 @@
+.texto {
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10vh;
+    margin-bottom: 64px;
+    z-index: -1;
+}
+.texto h1 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 0px;
+    line-height: 1;
+}
+.texto h1 span {
+    color: #0E91EF
+}
+.texto p {
+    margin-top: 12px;
+    font-size: 24px;
+    width: 90%;
+}
+@media (max-width: 425px) {
+    .texto {
+        margin-top: 0;
+        padding-top: 3vh;
+    }
+    .texto h1 {
+        font-weight: 600;
+    }
+    .texto p {
+        display: none;
+        font-size: 20px;
+    }
+}

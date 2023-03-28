@@ -1,0 +1,104 @@
+.funcionalidades {
+    position: relative;
+    width: 100%;
+    background: #f9f9f9;
+    padding-top: 64px;
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-div .text {
+    display: flex;
+    gap: 12px;
+}
+.f-div .text div {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.f-div img {
+    height: 420px;
+}
+.f-div .text img {
+    height: 52px;
+    width: 52px;
+}
+.f-div p {
+    text-align: left;
+    margin-top: 12px;
+}
+.f-div h3 {
+    font-size: 32px;
+    margin: 0;
+}
+.funcionalidades nav {
+    position: absolute;
+    top: -39px;
+    width: 100%;
+}
+.funcionalidades nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 24px;
+}
+.funcionalidades nav ul li {
+    font-size: 18px;
+    position: relative;
+}
+.funcionalidades nav ul li:hover {
+    color: #0E91EF;
+    cursor: pointer;
+}
+.funcionalidades nav ul li.actived {
+    color: #0E91EF;
+    font-weight: bold;
+}
+.funcionalidades nav ul li.actived::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #0E91EF;
+    border-radius: 4px;
+}
+@media (max-width: 425px) {
+    .funcionalidades {
+        padding-top: 24px;
+    }
+    .funcionalidades nav ul {
+        padding: 0;
+    }
+    .f-div img {
+        width: 100%;
+        height: 100%;
+    }
+    .f-div {
+        width: 100%;
+        flex-direction: column;
+    }
+    .f-div .text {
+        width: 100%;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: flex-start;
+        gap: 0;
+    }
+    .f-div .text img {
+        padding: 12px;
+    }
+    .f-div .text div {
+        padding: 0 12px;
+    }
+}
